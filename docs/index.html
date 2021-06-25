@@ -49,5 +49,37 @@
   <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
   <!--zoom image-->
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>
+    <style>
+        /* arrow sidebar style */
+        .sidebar-nav li {
+            position: relative;
+            margin: 0;
+            cursor: pointer;
+            /*text-transform: uppercase;*/
+        }
+
+        .sidebar-nav ul:not(.app-sub-sidebar) > li:not(.file)::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 11px;
+            left: -12px;
+            height: 6px;
+            width: 6px;
+            border-right: 1px solid #505d6b;
+            border-bottom: 1px solid #505d6b;
+            transform: rotate(-45deg);
+            transition: transform 0.1s;
+        }
+
+        .sidebar-nav ul:not(.app-sub-sidebar) > li.open::before {
+            transform: rotate(45deg);
+        }
+
+        .sidebar-nav ul:not(.app-sub-sidebar) > li.collapse::before {
+            transform: rotate(-45deg);
+        }
+        /**/
+    </style>
 </body>
 </html>

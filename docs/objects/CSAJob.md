@@ -91,19 +91,19 @@ if (client.CreateClient() == 1)
 ---
 ## CSAJob properties
 ---
-### Name (get,string)
+### prop::Name (get,string)
 >Get job name
-### Id (get,string)
+### prop::Id (get,string)
 >Get job guid
-### WorkDir (get,string)
+### prop::WorkDir (get,string)
 >Get job working directory (where batches are stored for this job)
-### Description (get,string)
+### prop::Description (get,string)
 >Job description
-### chrono_version (get,string)
+### prop::chrono_version (get,string)
 >ChronoScan version how saved this file
-### batch_name (get,string)
+### prop::batch_name (get,string)
 >Base batch name for new batches
-### task_OnProcessing_cfg (get,string)
+### prop::task_OnProcessing_cfg (get,string)
 >String showing the current job processing configuration
-### UserFields (get,[CSAUserField](./objects/CSAUserField) array)
+### prop::UserFields (get,[CSAUserField](./objects/CSAUserField) array)
 >Get a list of user fields for this job
