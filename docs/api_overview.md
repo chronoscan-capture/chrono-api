@@ -1,7 +1,7 @@
 # API Overview
 
 The ChronoScan Capture API allows to access ChronoScan Jobs&Batches from any
-automation client like VBScript, Visual Basic or C#.
+dev platform that supports automation, like VBScript, Visual Basic or C#.
 
 Any API client must have a working ChronoScan installation.
 
@@ -12,5 +12,5 @@ allows to load Jobs and create other objects.
 
 ### Notes
 * ChronoScan API clients MUST be run on the same directory that you ChronoScan installation.
-* Compile or install your executable on your __"%programfiles(x86)%\ChronoScan\Bin directory"__. 
+* Compile or install your executable on your __"%programfiles(x86)%\ChronoScan\Bin"__ directory.
 

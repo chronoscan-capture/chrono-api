@@ -13,11 +13,10 @@
 	* [CSAJob](./objects/CSAJob)
 	* [CSABatch](./objects/CSABatch)
 	* [CSADocument](./objects/CSADocument)
-	* [CSAPage](./objects/CSADocument)
+	* [CSAPage](./objects/CSAPage)
 	* [CSAUserField](./objects/CSAUserField)
+	* [CSAHOCRParser](./objects/CSAHOCRParser)
 * [Examples](./documentation/examples/index)
-* [Contributions](./contributions/index)
-* [About](./about/index)
 * [Contact](./contact/index)
 
 
