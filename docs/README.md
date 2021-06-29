@@ -1,7 +1,7 @@
-# ChronoScan Capture API
+# ChronoScan Capture API (CAPI)
 
 Beta1
-Updated: 2021/06/24
+Updated: 2021/06/29 16:39
 
 Documentation for the ChronoAPI module. 
 

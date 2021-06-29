@@ -16,7 +16,7 @@
 	* [CSAPage](./objects/CSAPage)
 	* [CSAUserField](./objects/CSAUserField)
 	* [CSAHOCRParser](./objects/CSAHOCRParser)
-* [Examples](./documentation/examples/index)
-* [Contact](./contact/index)
+* [Examples](./examples/index)
+
 
 
