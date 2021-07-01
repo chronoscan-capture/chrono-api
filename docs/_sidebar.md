@@ -5,17 +5,20 @@
 <span class="beta_chip">BETA</span></b>
 </p>
 -->
-* [HOME](/)
+
+* [ChronoApi](/)
 * [Release notes](./release-notes/index)
 * [API Overview](./api_overview)
 * [Objects](./objects)
 	* [CSAClient](./objects/CSAClient)
-	* [CSAJob](./objects/CSAJob)
-	* [CSABatch](./objects/CSABatch)
+    * [CSAJob](./objects/CSAJob)
+    * [CSABatch](./objects/CSABatch)
 	* [CSADocument](./objects/CSADocument)
 	* [CSAPage](./objects/CSAPage)
 	* [CSAUserField](./objects/CSAUserField)
 	* [CSAHOCRParser](./objects/CSAHOCRParser)
+    * [CSAPageFullTextBlock](./objects/CSAPageFullTextBlock)
+    * [CSAPageFullTextLine](./objects/CSAPageFullTextLine)
 * [Examples](./examples/index)
 
 

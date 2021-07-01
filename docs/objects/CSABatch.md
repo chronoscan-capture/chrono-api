@@ -36,6 +36,7 @@ if (client.CreateClient() == 1)
 | Value				| Description		|
 |-------------------|-------------------|
 |number|1 = ok, 0 = error|
+
 ---
 ### method::Delete
 >Delete current batch
@@ -46,6 +47,7 @@ if (client.CreateClient() == 1)
 | Value				| Description		|
 |-------------------|-------------------|
 |number|1 = ok, 0 = error|
+
 ---
 ### method::Save
 >Save changes on disk.
@@ -56,6 +58,7 @@ if (client.CreateClient() == 1)
 | Value				| Description		|
 |-------------------|-------------------|
 |number|1 = ok, 0 = error|
+
 ---
 ### method::Close
 >Close&unlock current batch.
@@ -66,6 +69,7 @@ if (client.CreateClient() == 1)
 | Value				| Description		|
 |-------------------|-------------------|
 |number|1 = ok, 0 = error|
+
 ---
 ### method::GetDocument
 >Returns a [CSADocument](./objects/CSADocument) object of the specified document.
@@ -78,6 +82,7 @@ if (client.CreateClient() == 1)
 |-------------------|-------------------|
 |null|invalid document index|
 |[CSADocument](./objects/CSADocument)|The document object|
+
 ---
 ## CSABatch properties
 ---

@@ -31,6 +31,7 @@ if (Doc != null)
 | Value				| Description		|
 |-------------------|-------------------|
 |number|1 = ok, 0 = error|
+
 ---
 ## CSAPage properties
 ---
@@ -42,3 +43,5 @@ if (Doc != null)
 >Path to a thumbnail of 512px wide of source image file (original or rendered if PDF files).
 ### prop::ThumbHRFile (get,bool)
 >Path to a thumbnail of 256px wide of source image file (original or rendered if PDF files).
+### prop::TextBlocks (get,array of [CSAPageFullTextBlock](./objects/CSAPageFullTextBlock/index))
+>An array of full text TextBlocks in the page

@@ -40,17 +40,55 @@ if (client.CreateClient() == 1)
 ```
 ---
 ## CSADocument methods
+
+### method::ProcessDocument
+>Process a document
+#### Parameters
+|Name|Description|
+|---|---|
+|Operations|If empty default operations on the job will be executed. A list of custom operations can be send using ; as separator ex: "DESKEW;OCR;LANG_DETECT"|
+
+##### Available operations for ProcessDocument
+
+|Name|Description|
+|---|---|
+|DESKEW|Deskew the document page images|
+|IMGPREPRO|Process the document page images|
+|OCR|OCR the document pages with the configured engines|
+|LANG_DETECT|Detect the document language|
+|FULLTEXT|Prepara document for full text search|
+|DOCCLASS|Excecute document classification module|
+|PRETRIGGERS|Execute triggers before document type|
+|PATTERNBTREAD|Search iTags before document type|
+|TYPESPLIT|Split on known document types|
+|TYPEDETECT|Detect document type|
+|CLOUDPAT|Read eTags|
+|PATTERNREAD|Read iTags after document type|
+|FIELDREAD|Read OCR Zones|
+|XGRIDREAD|Read line items grids|
+
+#### Return value
+
+|Value| Description|
+|---|---|
+|number|1 = ok, 0 = error|
+
+
 ---
 ### method::GetFieldValue
 >Get a named field value
 #### Parameters
-| Name				| Description		|
-|-------------------|-------------------|
+
+|Name|Description|
+|---|---|
 |FieldName			|Field name to retrieve|
+
 #### Return value
-| Value				| Description		|
-|-------------------|-------------------|
+
+|Value| Description|
+|---|---|
 |number|1 = ok, 0 = error|
+
 ---
 ### method::SetFieldValue
 >Set field value of the specified value.
@@ -63,6 +101,7 @@ if (client.CreateClient() == 1)
 | Value				| Description		|
 |-------------------|-------------------|
 |number|1 = ok, 0 = error|
+
 ---
 ## CSADocument properties
 ---

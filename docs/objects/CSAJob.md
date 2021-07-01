@@ -62,6 +62,7 @@ if (client.CreateClient() == 1)
 | Value				| Description		|
 |-------------------|-------------------|
 |string array|An array of the found batches names|
+
 ---
 ### method::LoadBatch
 >Load a batch by name
@@ -75,7 +76,7 @@ if (client.CreateClient() == 1)
 |-------------------|-------------------|
 |null|Error|
 |[CSABatch](./objects/CSABatch)|The batch object|
----
+
 ---
 ### method::CreateBatch
 >Create a new batch on this job
@@ -88,6 +89,7 @@ if (client.CreateClient() == 1)
 |-------------------|-------------------|
 |null|Error|
 |[CSABatch](./objects/CSABatch)|The batch object|
+
 ---
 ## CSAJob properties
 ---

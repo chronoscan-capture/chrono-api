@@ -22,6 +22,7 @@ This object gives access to a ChronoScan HOCR file.
 | Value				| Description		|
 |-------------------|-------------------|
 |number|1 = ok, 0 = error|
+
 ---
 ## CSAHOCRParser properties
 ---

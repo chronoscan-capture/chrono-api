@@ -28,11 +28,14 @@ else
 |**Configuration**	|*[optional]* Name of the ChronoScan configuration on ProgramData directory.	|
 |**Username**		|*[optional]* Username for Enterprise edition connections.						|
 |**Password**		|*[optional]* Password for Enterprise edition connections.						|
+
 #### Return value
+
 | Value				| Description		|
 |-------------------|-------------------|
 |1|Connection OK|
 |0|Connection Error|
+
 ---
 ### method::Job
 >Get an instance of the specified Job
@@ -45,6 +48,8 @@ else
 |-------------------|-------------------|
 |null|Error|
 |[CSAJob](./objects/CSAJob)|A CSAJob object of the specified job|
+
+---
 ## CSAClient properties
 ---
 ### prop::LastError (get,string)
