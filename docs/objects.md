@@ -22,10 +22,11 @@ To start using this API, a client will usually create a CSAClient object.
 |---|---|
 |[CSAUserField](./objects/CSAUserField)|User field definition in a job|
 
-### OCR&Text extraction objects
+### Text&Data extraction objects
 
 |Object|Description|
 |---|---|
+|[CSABarcode](./objects/CSABarcode)|Barcode object|
 |[CSAHOCRParser](./objects/CSAHOCRParser)|Access to OCR data of a CSAPage|
 |[CSAPageFullTextBlock](./objects/CSAPageFullTextBlock)|Block of text object in a page|
 |[CSAPageFullTextLine](./objects/CSAPageFullTextLine)|Line in a block of text object|

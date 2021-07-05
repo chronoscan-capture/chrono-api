@@ -115,3 +115,5 @@ if (client.CreateClient() == 1)
 >Number of pages of the document
 ### prop::Pages (get,array)
 >An array of [CSAPage](./objects/CSAPage) objects
+### prop::Barcodes (get,array)
+>An array of [CSABarcode](./objects/CSABarcode) objects with barcodes found on current document.

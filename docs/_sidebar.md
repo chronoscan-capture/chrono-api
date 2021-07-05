@@ -12,14 +12,16 @@
 * [Objects](./objects)
 	* [CSAClient](./objects/CSAClient)
     * [CSAJob](./objects/CSAJob)
+      * [CSAUserField](./objects/CSAUserField)
     * [CSABatch](./objects/CSABatch)
-	* [CSADocument](./objects/CSADocument)
-	* [CSAPage](./objects/CSAPage)
-	* [CSAUserField](./objects/CSAUserField)
-	* [CSAHOCRParser](./objects/CSAHOCRParser)
-    * [CSAHOCRWord](./objects/CSAHOCRWord)
-    * [CSAPageFullTextBlock](./objects/CSAPageFullTextBlock)
-    * [CSAPageFullTextLine](./objects/CSAPageFullTextLine)
+     	* [CSADocument](./objects/CSADocument)
+            * [CCSABarcode](./objects/CSABarcode)
+         	* [CSAPage](./objects/CSAPage)
+             	* [CSAHOCRParser](./objects/CSAHOCRParser)
+                * [CSAHOCRWord](./objects/CSAHOCRWord)
+                * [CSAPageFullTextBlock](./objects/CSAPageFullTextBlock)
+                * [CSAPageFullTextLine](./objects/CSAPageFullTextLine)
+    
 * [Examples](./examples/index)
 
 
