@@ -76,6 +76,20 @@ if (client.CreateClient() == 1)
 #### Parameters
 | Name				| Description		|
 |-------------------|-------------------|
+|Operations|If empty default operations on the job will be executed. A list of custom operations can be send using ; as separator ex: "DESKEW;OCR;LANG_DETECT"|
+#### Return value
+| Value				| Description		|
+|-------------------|-------------------|
+|number|1 = ok, 0 = error|
+
+>Check [CSADocument](./objects/CSADocument) for a complete list of operations.
+
+---
+### method::ProcessBatch
+>Process all documents in the batch.
+#### Parameters
+| Name				| Description		|
+|-------------------|-------------------|
 |Document			|0 based index of the document|
 #### Return value
 | Value				| Description		|
@@ -83,7 +97,7 @@ if (client.CreateClient() == 1)
 |null|invalid document index|
 |[CSADocument](./objects/CSADocument)|The document object|
 
----
+
 ## CSABatch properties
 ---
 ### prop::Name (get,string)

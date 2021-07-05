@@ -17,6 +17,7 @@
 	* [CSAPage](./objects/CSAPage)
 	* [CSAUserField](./objects/CSAUserField)
 	* [CSAHOCRParser](./objects/CSAHOCRParser)
+    * [CSAHOCRWord](./objects/CSAHOCRWord)
     * [CSAPageFullTextBlock](./objects/CSAPageFullTextBlock)
     * [CSAPageFullTextLine](./objects/CSAPageFullTextLine)
 * [Examples](./examples/index)

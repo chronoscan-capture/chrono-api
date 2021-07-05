@@ -1,6 +1,8 @@
 # Objects
 
-This objects gives access to common functions in ChronoScan.
+This objects gives access to objects that allows to do main tasks in ChronoScan.
+
+To start using this API, a client will usually create a CSAClient object.
 
 ## Automation objects
 

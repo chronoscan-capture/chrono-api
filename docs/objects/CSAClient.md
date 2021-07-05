@@ -67,11 +67,23 @@ else
 ### prop::JobIds (get,string array)
 >Get a list of configuration job Id's
 
->Example:
+Example:
 ```cs
 var JobIds = client.JobIds;
 foreach (String JobId in JobIds)
 {
     Console.WriteLine("\t{0}", JobId);
+}
+```
+---
+### prop::ConfigurationsList (get,string array)
+>Get a list of station available ChronoScan configurations
+
+Example:
+```cs
+var Cfgs = client.ConfigurationsList;
+foreach (String Cfg in Cfgs)
+{
+    Console.WriteLine("\t{0}", Cfg);
 }
 ```
