@@ -14,9 +14,11 @@ To start using this API, a client will usually create a CSAClient object.
 |[CSAJob](./objects/CSAJob)|The job object contain user fields, document types and working parameters|
 |[CSABatch](./objects/CSABatch)|This object gives access to a job batch, a "Batch" is a set of documents in ChronoScan|
 |[CSADocument](./objects/CSADocument)|Control a Document object in a batch|
+|[CSADocumentType](./objects/CSADocumentType)|Document type definition in a job|
+|[CSATrigger](./objects/CSATrigger)|Trigger object definition|
 |[CSAPage](./objects/CSAPage)|Control a Page in a document|
 
-### Data structure objects
+### Data definition objects
 
 |Object|Description|
 |---|---|

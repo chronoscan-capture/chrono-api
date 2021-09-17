@@ -13,6 +13,7 @@
 	* [CSAClient](./objects/CSAClient)
     * [CSAJob](./objects/CSAJob)
       * [CSAUserField](./objects/CSAUserField)
+      * [CSADocumentType](./objects/CSADocumentType)
     * [CSABatch](./objects/CSABatch)
      	* [CSADocument](./objects/CSADocument)
             * [CCSABarcode](./objects/CSABarcode)

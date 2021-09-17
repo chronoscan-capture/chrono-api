@@ -91,6 +91,34 @@ if (client.CreateClient() == 1)
 |[CSABatch](./objects/CSABatch)|The batch object|
 
 ---
+
+### method::DocumentTypesList
+>Get all the document types attached to the job
+#### Parameters
+| Name				| Description		|
+|-------------------|-------------------|
+|||
+#### Return value
+| Value				| Description		|
+|-------------------|-------------------|
+|null|Error|
+|Array|Array of [CSADocumentType](./objects/CSADocumentType) objects|
+
+---
+
+### method::TriggerList
+>Get a list of global Triggers
+#### Parameters
+| Name				| Description		|
+|-------------------|-------------------|
+|||
+#### Return value
+| Value				| Description		|
+|-------------------|-------------------|
+|null|Error|
+|Array|Array of [CSATrigger](./objects/CSATrigger) objects|
+
+---
 ## CSAJob properties
 ---
 ### prop::Name (get,string)
