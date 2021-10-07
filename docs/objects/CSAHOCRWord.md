@@ -16,7 +16,7 @@ foreach (CSAHOCRWord word in words)
 ### prop::Value (get,string)
 >Text of the word
 ### prop::Left (get,int)
->Left coordinate of the work in px
+>Left coordinate of the work in px.
 ### prop::Top (get,int)
 >Top coordinate of the work in px
 ### prop::Right (get,int)
