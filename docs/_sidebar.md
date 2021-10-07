@@ -9,6 +9,7 @@
 * [ChronoApi](/)
 * [Release notes](./release-notes/index)
 * [API Overview](./api_overview)
+* [Command line interface](./ChronoCMD/index)
 * [Objects](./objects)
 	* [CSAClient](./objects/CSAClient)
     * [CSAJob](./objects/CSAJob)
@@ -22,7 +23,6 @@
                 * [CSAHOCRWord](./objects/CSAHOCRWord)
                 * [CSAPageFullTextBlock](./objects/CSAPageFullTextBlock)
                 * [CSAPageFullTextLine](./objects/CSAPageFullTextLine)
-    
 * [Examples](./examples/index)
 
 

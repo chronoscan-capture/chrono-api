@@ -6,7 +6,13 @@ To start using this API, a client will usually create a CSAClient object.
 
 ## Automation objects
 
-### Main objects
+### Command Line interface (ChronoCMD)
+
+|Object|Description|
+|---|---|
+|[ChronoCMD](./ChronoCMD)|Command line access to API functions|
+
+### API Main objects
 
 |Object|Description|
 |---|---|

@@ -108,3 +108,31 @@ API operations allows to process files without creating ChronoScan batches.
 | Command   		        | Description		|
 |---------------------------|-------------------|
 |**-ctd_Compare**| Compare xml files using a json configuration file -ctd_Compare:\"c:\\mytest.json\", this command allows to create automated tests for version or configuration changes. [LINK TO TUTORIAL]|
+
+
+
+### Execute a compare results command
+```cs
+Command:
+chronoCMD -ctd_Compare:"I:\DATASETS\CHRONOVERSION-TESTS\VERSION_COMPARE_v65_vs_v66_test.json"
+```
+```json
+// Example of -ctd_Compare configuration file:
+{
+  "sourceA": "I:\\DATASETS\\CHRONOVERSION-TESTS\\AGUAS_DE_IBIZA\\",
+  "sourceAExtension": ".1.0.2.65.xml",
+  "sourceB": "I:\\DATASETS\\CHRONOVERSION-TESTS\\AGUAS_DE_IBIZA\\",
+  "sourceBExtension": ".1.0.2.66.xml",
+  "resultFile": "",
+  "compareNodes": [
+    {
+	  "srcA": "//dataroot/document/Tipo_x0020_de_x0020_Documento",
+	  "srcB": "//dataroot/document/Tipo_x0020_de_x0020_Documento"
+	},
+	{
+	  "srcA": "//dataroot/document/CIF",
+	  "srcB": "//dataroot/document/CIF"
+	}
+  ]
+}
+```
