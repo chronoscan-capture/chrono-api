@@ -16,42 +16,6 @@ ChronoCMD is an exe file that allows to automate common tasks on ChronoScan/Chro
 |-list_batches     | List batches of current job|
 |-batch            | Set working batch name for ChronoCMD session|
 
-
-### List configurations
-
-```cs
-Command:
-ChronoCMD.exe -list_Configs
-Output:
-ChronoScan                      <--- (default configuration)
-ChronoScan.MyTestConfig         <--- (custom configuration)
-```
-
-### Connect to an enterprise configuration and list Jobs
-
-```cs
-Command:
-ChronoCMD.exe -cfg:"ChronoScan.MyTestConfig" -usr:"Admin" -pwd:"mypassword" -list_jobs
-Output:
-Configuration: ChronoScan.MyTestConfig
-aaa@DC9FF26E-2744-447F-BE08-A4D47C292641
-AP1@77EBE544-4703-4681-93F7-60AB7A8E2A8E
-...
-```
-
-### Connect to default configuration and list Job batches
-
-```cs
-Command:
-ChronoCMD.exe -job:"AP1@77EBE544-4703-4681-93F7-60AB7A8E2A8E" -list_batches
-Output:
-Configuration: << Default >>
-Batchname_00001
-Batchname_00002
-Batchname_00003
-...
-```
-
 ## Batch operations:
 
 | Command   		        | Description		|
@@ -109,6 +73,58 @@ API operations allows to process files without creating ChronoScan batches.
 |---------------------------|-------------------|
 |**-ctd_Compare**| Compare xml files using a json configuration file -ctd_Compare:\"c:\\mytest.json\", this command allows to create automated tests for version or configuration changes. [LINK TO TUTORIAL]|
 
+
+## Examples:
+
+### List ChronoScan available configurations
+
+```cs
+Command:
+ChronoCMD.exe -list_Configs
+Output:
+ChronoScan                      <--- (default configuration)
+ChronoScan.MyTestConfig         <--- (custom configuration)
+```
+
+### Connect to an Enterprise configuration and list Jobs
+
+```cs
+Command:
+ChronoCMD.exe -cfg:"ChronoScan.MyTestConfig" -usr:"Admin" -pwd:"mypassword" -list_jobs
+Output:
+Configuration: ChronoScan.MyTestConfig
+aaa@DC9FF26E-2744-447F-BE08-A4D47C292641
+AP1@77EBE544-4703-4681-93F7-60AB7A8E2A8E
+...
+```
+
+### Connect to default configuration and list Job "AP1" batches
+
+```cs
+Command:
+ChronoCMD.exe -job:"AP1@77EBE544-4703-4681-93F7-60AB7A8E2A8E" -list_batches
+Output:
+Configuration: << Default >>
+Batchname_00001
+Batchname_00002
+Batchname_00003
+...
+```
+### Create a temporary batch for each PDF file on the directory, process, export and delete the batch.
+
+```cs
+for /R "I:\DATASETS\TRAIN-BEST-PDF-Sept-2021-BY-TYPE\" %c in ("*.pdf") do chronocmd -cfg:"ChronoScan.W2012WEBBEST_PROD" -usr:"admin" -pwd:"*****" -job:"MyJob@330C6162-CA87-4130-827F-C6F34FAB1A67" -create_batch -batch:"%guid%" -excludeifprocextension:".1.0.2.65.xml" -add_files:"%c" -process_batch -export_batch -delete_after_export
+
+Notes:
+for /R
+    The for command will find files also on child directories.
+
+-batch:"%guid%"
+    An unique batchname will be generated.
+
+-excludeifprocextension:".1.0.2.65.xml"
+    If a file with same name + extension ".1.0.2.65.xml" exists, the file will be ignored.
+```
 
 
 ### Execute a compare results command
