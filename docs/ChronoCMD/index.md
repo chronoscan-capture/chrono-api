@@ -7,14 +7,14 @@ ChronoCMD is an exe file that allows to automate common tasks on ChronoScan/Chro
 
 | Command   		        | Description		|
 |---------------------------|-------------------|
-|-list_configs              |Show available configurations|
-|-cfg              |Connect to an specific Chronocan configuration (optional, if not specified ChronoCMD will connect to default configuration)|
-|-usr              |Enterprise user|
-|-pwd              |Enterprise user password|
-|-list_jobs        |List available job id's|
-|-job              | Set working job for ChronoCMD session|
-|-list_batches     | List batches of current job|
-|-batch            | Set working batch name for ChronoCMD session|
+|**-list_configs**              |Show available configurations|
+|**-cfg**              |Connect to an specific Chronocan configuration (optional, if not specified ChronoCMD will connect to default configuration)|
+|**-usr**              |Enterprise user|
+|**-pwd**              |Enterprise user password|
+|**-list_jobs**        |List available job id's|
+|**-job**              | Set working job for ChronoCMD session|
+|**-list_batches**     | List batches of current job|
+|**-batch**            | Set working batch name for ChronoCMD session|
 
 ## Batch operations:
 
@@ -39,7 +39,9 @@ ChronoCMD is an exe file that allows to automate common tasks on ChronoScan/Chro
 |**-tX_list_configs**| Show available db configurations|
 |**-tX_db**| Set ChronoTxt database connection (ex: -tX_db:\"mydbconnection\")|
 |**-tX_jobs**| List ChronoTxt Jobs (needs a -tX_db connection first)|
-|**-tX_load_batch**| Load a batch by name or id (needs -tx_db & -tx_jobId)|
+|**-tX_createBatch**| Load a batch by name or id (needs -tx_db & -tx_jobId)|
+||**-tX_overwrite** Overwrite existing batch|
+|**-tX_loadBatch**| Load a batch by name or id (needs -tx_db & -tx_jobId)|
 |**-tX_reprocess**| Reprocess loaded batch|
 
 
@@ -66,12 +68,12 @@ API operations allows to process files without creating ChronoScan batches.
 |**-api_MERGE_compareocr**| Execute in OCR compare merge mode|
 |**-api_SOPA**| Execute SOPA layout on active item|
 |**-api_SORTHOCR**| Force Resort an hocr file (ex: -api_SORTHOCR:\"c:\\temp\\inputfile.html\"|
-||        if not file sent will use api_sel_files selection|
+||        if not file sent, routine will use api_sel_files selection|
 
 ## Testing & Debug utilities:
 | Command   		        | Description		|
 |---------------------------|-------------------|
-|**-ctd_Compare**| Compare xml files using a json configuration file -ctd_Compare:\"c:\\mytest.json\", this command allows to create automated tests for version or configuration changes. [LINK TO TUTORIAL]|
+|**-ctd_Compare**| Compare xml files using a json configuration file -ctd_Compare:\"c:\\mytest.json\", this command allows to create automated tests for version or configuration changes.|
 
 
 ## Examples:
