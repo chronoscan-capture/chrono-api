@@ -100,9 +100,7 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 	    CSABatch Batch = job.CreateBatch(BatchName);
 	    if (Batch == null)
 	    {
-
 		Console.WriteLine("\t\t\tBatch loading ERROR: " + client.LastError);
-
 		if (client.LastError == "batch_already_exist")
 		{
 		    Console.WriteLine("Do you want to delete the batch? Push 'y' to delete it");
@@ -141,16 +139,8 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 		{
 		    Console.WriteLine("\t\t\tEntBatchStatus: {0}", Batch.EntBatchStatus);
 		}
-
 		Batch.SplitManual = 1;
 		Batch.SplitOnEachFile = 1;
-
-		/*
-		Console.WriteLine("\t\t\tAdding sample FILE 1 to the Batch");
-		Batch.AddFileToBatch(
-		    "P:\\PROYECTOS\\Imagenes\\pdf con mas de 4000 paginas\\30 CS O&M Combined th Floor v2.pdf"
-		);
-		*/
 		Console.WriteLine("\t\t\tAdding sample FILE 1 to the Batch----------------------------------------------->");
 		Batch.AddFileToBatch("c:\temp\file1.pdf");
 		Console.WriteLine("\t\t\tAdding sample FILE 2 to the Batch----------------------------------------------->");
@@ -182,7 +172,6 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 		var key = Console.ReadKey();
 		if (key.KeyChar == 'y')
 		{
-
 		    Batch.ExportBatch();
 		}
 
