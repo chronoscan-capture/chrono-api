@@ -1,6 +1,6 @@
 # CSAClient
 
-This object give access to a ChronoScan Desktop/Enterprise Jobs&Batches and Configurations.
+This object gives access to a ChronoScan Desktop/Enterprise Jobs&Batches and Configurations.
 
 A client will always create a ***CSAClient*** object in order to access a ChronoScan configuration.
 
