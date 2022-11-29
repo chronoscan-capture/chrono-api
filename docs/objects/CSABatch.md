@@ -1,6 +1,6 @@
 # CSABatch
 
-This object give access to a ChronoScan batch object.
+This object gives access to a ChronoScan batch object.
 
 A ChronoScan batch contains documents and his data.
 
