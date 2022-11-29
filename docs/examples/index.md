@@ -157,7 +157,6 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 			Console.WriteLine("\t\t\t\tPages: {0}", Doc.PageCount);
 			Console.WriteLine("\t\t\t\tSrcDoc: {0}", Doc.GetFieldValue("SrcDoc"));
 
-
 			Doc.ProcessDocument("");//empty will execute the job configured actions
 			//Doc.ProcessDocument("OCR;FULLTEXT;");
 
