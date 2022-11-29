@@ -1,6 +1,6 @@
 # CSADocument
 
-This object gives access to a ChronoScan document object.
+This object give access to a ChronoScan document object.
 
 A ChronoScan document contains documents and his data (pages and fields).
 
