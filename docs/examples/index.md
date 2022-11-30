@@ -111,25 +111,17 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 			if (BatchDel != null)
 			{
 			    if (BatchDel.Delete() == 1)
-			    {
 				Console.WriteLine("\t\t\tBatch deleted");
-			    }
 			    else
-			    {
 				Console.WriteLine("Error {0}", client.LastError);
-			    }
 			    BatchDel.FreeItem();
 			}
 			else
-			{
 			    Console.WriteLine("Error {0}", client.LastError);
-			}
 		    }
 		}
 		Batch = job.CreateBatch(BatchName);
 	    }
-
-
 
 	    if (Batch != null)
 	    {
