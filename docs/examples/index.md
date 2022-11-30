@@ -17,13 +17,13 @@ else
 ```
 ## Example 2: Listing documents in a batch.
 ```cs
-var JobId = "Sample Job Name@D096A2FA-D5DC-435C-B734-E44916AE01EA";
+var JobName = "Sample Job Name";
 
 CSAClient client = new CSAClient();
 
 if (client.CreateClient() == 1)
 {
-	CSAJob Job = client.Job(JobId);
+	CSAJob Job = client.Job(JobName);
 
 	if (Job != null)
 	{
@@ -79,12 +79,12 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 	Console.WriteLine("\tCS Version: {0}", client.Version);
 	Console.WriteLine("\tCS Directory: {0}", client.Directory);
 
-	var JobId = "AP1@77EBE544-4703-4681-93F7-60AB7A8E2A8E";
+	var JobName= "AP1";
 	var BatchName = "NEW_BATCH_NAME_%job_batch_counter%";
 
-	Console.WriteLine("Loading job Id: " + JobId);
+	Console.WriteLine("Loading job Id: " + JobName);
 
-	CSAJob job = client.Job(JobId);
+	CSAJob job = client.Job(JobName);
 	if (job != null)
 	{
 		Console.WriteLine("\t\tJob Name: {0}", job.Name);
