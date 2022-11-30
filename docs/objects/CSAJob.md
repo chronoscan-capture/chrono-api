@@ -5,17 +5,17 @@ This object gives access to a ChronoScan job.
 A ChronoScan Job contains main working parameters, like recognition modules, user fields, document types 
 that allows to generate and process batches.
 
-A client must use the method "Job" of the client object to access a job object (Ex: client.Job(JobId)).
+A client must use the method "Job" of the client object to access a job object (Ex: client.Job(JobName)).
 
 ## Example
 ```cs
-var JobId = "Sample Job Name@D096A2FA-D5DC-435C-B734-E44916AE01EA";
+var JobName = "Sample Job Name";
 
 CSAClient client = new CSAClient();
 
 if (client.CreateClient() == 1)
 {
-	CSAJob Job = client.Job(JobId);
+	CSAJob Job = client.Job(JobName);
 
 	if (Job != null)
 	{
