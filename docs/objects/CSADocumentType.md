@@ -6,13 +6,13 @@ A ChronoScan document type contains OCR zones and info to process an specific do
 
 ## Example
 ```cs
-var JobId = "Sample Job Name@D096A2FA-D5DC-435C-B734-E44916AE01EA";
+var JobName = "Sample Job Name";
 
 CSAClient client = new CSAClient();
 
 if (client.CreateClient() == 1)
 {
-	CSAJob Job = client.Job(JobId);
+	CSAJob Job = client.Job(JobName);
 
 	if (Job != null)
 	{
