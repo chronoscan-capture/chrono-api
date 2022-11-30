@@ -42,7 +42,7 @@ else
 #### Parameters
 | Name				| Description		|
 |-------------------|-------------------|
-|**JobId**	|Job Id as show in JobIds properties, a job id is a job name + a guid (Ex: "Sample Job Name@D096A2FA-D5DC-435C-B734-E44916AE01EA")|
+|**JobName**	|Job Name or Job Id as show in JobIds properties, a job id is a job name + a guid (Ex: "Sample Job Name@D096A2FA-D5DC-435C-B734-E44916AE01EA")|
 #### Return value
 | Value				| Description		|
 |-------------------|-------------------|
