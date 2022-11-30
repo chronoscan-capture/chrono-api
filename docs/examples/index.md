@@ -87,19 +87,19 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 	CSAJob job = client.Job(JobId);
 	if (job != null)
 	{
-	    Console.WriteLine("\t\tJob Name: {0}", job.Name);
-	    Console.WriteLine("\t\tJob Id: {0}", job.Id);
-	    Console.WriteLine("\t\tJob WorkDir: {0}", job.WorkDir);
-	    Console.WriteLine("\t\tJob Description: {0}", job.Description);
-	    Console.WriteLine("\t\tJob chrono_version: {0}", job.chrono_version);
-	    Console.WriteLine("\t\tJob Base batch_name: {0}", job.batch_name);
-	    Console.WriteLine("\t\tJob task_OnProcessing_cfg: {0}", job.task_OnProcessing_cfg);
+		Console.WriteLine("\t\tJob Name: {0}", job.Name);
+		Console.WriteLine("\t\tJob Id: {0}", job.Id);
+		Console.WriteLine("\t\tJob WorkDir: {0}", job.WorkDir);
+		Console.WriteLine("\t\tJob Description: {0}", job.Description);
+		Console.WriteLine("\t\tJob chrono_version: {0}", job.chrono_version);
+		Console.WriteLine("\t\tJob Base batch_name: {0}", job.batch_name);
+		Console.WriteLine("\t\tJob task_OnProcessing_cfg: {0}", job.task_OnProcessing_cfg);
 
-	    Console.WriteLine("\t\tCreating BATCH: " + BatchName);
+		Console.WriteLine("\t\tCreating BATCH: " + BatchName);
 
-	    CSABatch Batch = job.CreateBatch(BatchName);
-	    if (Batch == null)
-	    {
+		CSABatch Batch = job.CreateBatch(BatchName);
+		if (Batch == null)
+		{
 		Console.WriteLine("\t\t\tBatch loading ERROR: " + client.LastError);
 		if (client.LastError == "batch_already_exist")
 		{
@@ -121,16 +121,14 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 		    }
 		}
 		Batch = job.CreateBatch(BatchName);
-	    }
+	}
 
-	    if (Batch != null)
-	    {
+	if (Batch != null)
+	{
 		Console.WriteLine("\t\t\tBatch Created!!");
 		Console.WriteLine("\t\t\tBatch Name: {0} ({1} document(s))", Batch.Name, Batch.DocumentsCount);
-		if (client.Enterprise)
-		{
-		    Console.WriteLine("\t\t\tEntBatchStatus: {0}", Batch.EntBatchStatus);
-		}
+		if (client.Enterprise)	
+			Console.WriteLine("\t\t\tEntBatchStatus: {0}", Batch.EntBatchStatus);
 		Batch.SplitManual = 1;
 		Batch.SplitOnEachFile = 1;
 		Console.WriteLine("\t\t\tAdding sample FILE 1 to the Batch----------------------------------------------->");
@@ -168,9 +166,9 @@ if (client.CreateClient("ChronoScan.MYCONFIGNAME", "admin", "12345") == 1)
 
 		Batch.Close();
 		Batch.FreeItem();
-	    }
+		}
 
-	    job.FreeItem();
+		job.FreeItem();
 	}
 }
 else
