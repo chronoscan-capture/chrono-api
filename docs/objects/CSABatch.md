@@ -38,6 +38,26 @@ if (client.CreateClient() == 1)
 |number|1 = ok, 0 = error|
 
 ---
+### method::AddFileToBatch
+>Add a file to current batch
+#### Parameters
+| Name				| Description		|
+|-------------------|-------------------|
+|File			|full path to a file|
+|Pages			|(optional defaul "1-") Pages to extract when multipage (tiff/pdf) "1-"(all) "2-5" "1,2,8" "2-5,8,15-20"|
+|Mode			|(optional defaul "auto") mode when pdf "auto", "extract"(extract images), "convert"(render)|
+|Color			|(optional defaul 0) Color when render pdf, 0=Color, 1=B&W|
+|Dpi			|(optional defaul 200) Dpi when render pdf|
+|ExtractText		|(optional defaul 1) Extract text from pdf text layer, 1 = true, 0 = false|
+|ExtractTextOmitInImages|(optional defaul 1) Omit pdf text layer when extracting images, keep when render, 1 = true, 0 = false|
+|SavePdfPage		|(optional defaul 0) Save each pdf page attached to the ChronoScan page, it can be used when export, 1 = true, 0 = false|
+|SavePdfDoc		|(optional defaul 0) Save pdf document attached to the ChronoScan document, it can be used when export, 1 = true, 0 = false|
+#### Return value
+| Value				| Description		|
+|-------------------|-------------------|
+|number|1 = ok, 0 = error|
+
+---
 ### method::Delete
 >Delete current batch
 #### Parameters
