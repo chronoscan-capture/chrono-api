@@ -27,6 +27,13 @@ ChronoCMD is an exe file that allows to automate common tasks on ChronoScan/Chro
 ||**-recurse** : Add files will find on subdirectories|
 ||**-pages** : Allows to specify with pages to import from each file (ex: -pages:\"1-2\" or -pages:\"2-\"|
 ||**-excludeifprocextension** : Exclude if a file with same name and expecified extesion exists (ex: -excludeifprocextension:\".1.0.2.65.xml\")|
+||**-splitOnEachFile** : Create a new document for each file, values(0-1) default=1|
+||**-pdfMode** : pdf Extraction mode, values("auto"-"extract"-"convert") default="auto"|
+||**-pdfRenderDpi** : Dpi when pdf rendering default=200|
+||**-pdfRenderColor** : pdf rendering color mode, values("0"=color - 1="B&W") default=0|
+||**-pdfExtractText** : Extract the pdf text layer, values(0-1) default=1|
+||**-pdfSavePage** : Save each pdf page, values(0-1) default=0|
+||**-pdfSaveDoc** : Save the pdf document, values(0-1) default=0|
 |**-delete_batch**| Delete a batch (needs working batch name)|
 |**-process_batch**|Process batch, specific process can be indicated (ex: -process_batch:\"LANG_DETECT;OCR;FIELDREAD;\"|
 |**-export_batch**|Execute batch export configuration|
